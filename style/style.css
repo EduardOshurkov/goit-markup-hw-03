@@ -36,11 +36,11 @@ img {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 body {
@@ -56,6 +56,10 @@ body {
   text-decoration: none;
 }
 /*----------------HEADER---------------------*/
+.header-container {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-nav,
 .header-list {
   display: flex;
@@ -83,7 +87,6 @@ body {
 .container-logo {
   padding-top: 24px;
   padding-bottom: 25px;
-  padding-left: 215px;
   margin-right: 93px;
 }
 
@@ -157,8 +160,7 @@ body {
 
 .container-hero {
   padding-top: 200px;
-  padding-left: 452px;
-  padding-bottom: 280px;
+  height: 600px;
 }
 
 .hero-title {
@@ -170,6 +172,11 @@ body {
 
   text-align: center;
   max-width: 696px;
+}
+
+.hero-title {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn {
@@ -191,6 +198,11 @@ body {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
+}
+
+.hero-btn {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*----------------ABOUT---------------------*/
@@ -217,10 +229,11 @@ body {
   margin: 0;
 }
 
-.about-item {
+.about-item,
+h3 {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
@@ -268,6 +281,10 @@ body {
 }
 
 /*----------------TEAM---------------------*/
+.team {
+  background-color: #f5f4fa;
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -446,6 +463,7 @@ body {
 .example-text {
   margin-top: 4px;
   padding-left: 24px;
+  padding-bottom: 20px;
   max-width: 322px;
   max-height: 30px;
 }
@@ -466,4 +484,10 @@ body {
 
 .list-img:nth-last-child(-n + 3) {
   padding-bottom: 94px;
+}
+
+.border-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
